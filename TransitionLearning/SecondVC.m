@@ -88,7 +88,7 @@ static CGFloat const AnimationTime = 0.3;
 - (UIImageView *)currentIV{
     if (!_currentIV) {
         UIImageView * iv = [[UIImageView alloc]init];
-        iv.backgroundColor = [UIColor redColor];
+//        iv.backgroundColor = [UIColor redColor];
         [self.view addSubview:iv];
         
         _currentIV = iv;

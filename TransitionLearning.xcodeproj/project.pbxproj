@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		899CCCE41DA9EADA009109DC /* BossVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 899CCCE31DA9EADA009109DC /* BossVC.m */; };
 		89D066821D9B566100FA28F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D066811D9B566100FA28F6 /* main.m */; };
 		89D066851D9B566100FA28F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D066841D9B566100FA28F6 /* AppDelegate.m */; };
 		89D066881D9B566100FA28F6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D066871D9B566100FA28F6 /* ViewController.m */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		899CCCE21DA9EADA009109DC /* BossVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BossVC.h; sourceTree = "<group>"; };
+		899CCCE31DA9EADA009109DC /* BossVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BossVC.m; sourceTree = "<group>"; };
 		89D0667D1D9B566100FA28F6 /* TransitionLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransitionLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89D066811D9B566100FA28F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		89D066831D9B566100FA28F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -70,6 +73,8 @@
 				89D066871D9B566100FA28F6 /* ViewController.m */,
 				89D066971D9B571F00FA28F6 /* SecondVC.h */,
 				89D066981D9B571F00FA28F6 /* SecondVC.m */,
+				899CCCE21DA9EADA009109DC /* BossVC.h */,
+				899CCCE31DA9EADA009109DC /* BossVC.m */,
 				89D0669A1D9B6D0500FA28F6 /* TransFromAnimation.h */,
 				89D0669B1D9B6D0500FA28F6 /* TransFromAnimation.m */,
 				89D066891D9B566100FA28F6 /* Main.storyboard */,
@@ -162,6 +167,7 @@
 				89D066881D9B566100FA28F6 /* ViewController.m in Sources */,
 				89D0669C1D9B6D0500FA28F6 /* TransFromAnimation.m in Sources */,
 				89D066851D9B566100FA28F6 /* AppDelegate.m in Sources */,
+				899CCCE41DA9EADA009109DC /* BossVC.m in Sources */,
 				89D066991D9B571F00FA28F6 /* SecondVC.m in Sources */,
 				89D066821D9B566100FA28F6 /* main.m in Sources */,
 			);
@@ -314,6 +320,7 @@
 				89D066961D9B566100FA28F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
