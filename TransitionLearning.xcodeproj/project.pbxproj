@@ -15,7 +15,6 @@
 		89D0668D1D9B566100FA28F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89D0668C1D9B566100FA28F6 /* Assets.xcassets */; };
 		89D066901D9B566100FA28F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89D0668E1D9B566100FA28F6 /* LaunchScreen.storyboard */; };
 		89D066991D9B571F00FA28F6 /* SecondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D066981D9B571F00FA28F6 /* SecondVC.m */; };
-		89D0669C1D9B6D0500FA28F6 /* TransFromAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D0669B1D9B6D0500FA28F6 /* TransFromAnimation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,8 +32,6 @@
 		89D066911D9B566100FA28F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89D066971D9B571F00FA28F6 /* SecondVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondVC.h; sourceTree = "<group>"; };
 		89D066981D9B571F00FA28F6 /* SecondVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondVC.m; sourceTree = "<group>"; };
-		89D0669A1D9B6D0500FA28F6 /* TransFromAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransFromAnimation.h; sourceTree = "<group>"; };
-		89D0669B1D9B6D0500FA28F6 /* TransFromAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransFromAnimation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +72,6 @@
 				89D066981D9B571F00FA28F6 /* SecondVC.m */,
 				899CCCE21DA9EADA009109DC /* BossVC.h */,
 				899CCCE31DA9EADA009109DC /* BossVC.m */,
-				89D0669A1D9B6D0500FA28F6 /* TransFromAnimation.h */,
-				89D0669B1D9B6D0500FA28F6 /* TransFromAnimation.m */,
 				89D066891D9B566100FA28F6 /* Main.storyboard */,
 				89D0668C1D9B566100FA28F6 /* Assets.xcassets */,
 				89D0668E1D9B566100FA28F6 /* LaunchScreen.storyboard */,
@@ -165,7 +160,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				89D066881D9B566100FA28F6 /* ViewController.m in Sources */,
-				89D0669C1D9B6D0500FA28F6 /* TransFromAnimation.m in Sources */,
 				89D066851D9B566100FA28F6 /* AppDelegate.m in Sources */,
 				899CCCE41DA9EADA009109DC /* BossVC.m in Sources */,
 				89D066991D9B571F00FA28F6 /* SecondVC.m in Sources */,

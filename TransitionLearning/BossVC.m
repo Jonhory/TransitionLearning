@@ -14,7 +14,7 @@
 
 @property (nonatomic ,copy) UIView * navView;
 
-@property (nonatomic ,copy) UIView * whiteView;
+@property (nonatomic ,copy) UIView * boss_backView;
 
 @end
 
@@ -47,16 +47,16 @@ static CGFloat const AnimationTime = 0.3;
     return _navView;
 }
 
-- (UIView *)whiteView{
-    if (!_whiteView) {
+- (UIView *)boss_backView{
+    if (!_boss_backView) {
         UIView * view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN.width , 100)];
         view.center = CGPointMake(SCREEN.width/2, SCREEN.height/2);
         [self.view addSubview:view];
         view.backgroundColor = [UIColor greenColor];
         
-        _whiteView = view;
+        _boss_backView = view;
     }
-    return _whiteView;
+    return _boss_backView;
 }
 
 - (instancetype)init{
@@ -76,7 +76,7 @@ static CGFloat const AnimationTime = 0.3;
 
 - (void)changeBigView{
     [UIView animateWithDuration:AnimationTime animations:^{
-        self.whiteView.frame = CGRectMake(0, 64, SCREEN.width, SCREEN.height - 64);
+        self.boss_backView.frame = CGRectMake(0, 64, SCREEN.width, SCREEN.height - 64);
     } completion:^(BOOL finished) {
         
     }];
@@ -86,7 +86,7 @@ static CGFloat const AnimationTime = 0.3;
     [super viewDidLoad];
     
     [self navView];
-    [self whiteView];
+    [self boss_backView];
     
     // Do any additional setup after loading the view.
 }

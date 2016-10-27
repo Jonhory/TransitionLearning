@@ -9,7 +9,6 @@
 #import "ViewController.h"
 #import "SecondVC.h"
 
-#import "TransFromAnimation.h"
 #import "BossVC.h"
 #import "AppDelegate.h"
 
@@ -19,7 +18,7 @@
 
 @property (nonatomic ,assign) NSInteger lastIndexRow;
 
-@property (nonatomic ,weak) UIImageView * jietu;
+@property (nonatomic ,weak) UIImageView * screenshot;
 
 @end
 
@@ -27,13 +26,13 @@
 
 @implementation ViewController
 
-- (UIImageView *)jietu{
-    if (!_jietu) {
+- (UIImageView *)screenshot{
+    if (!_screenshot) {
         UIImageView * view = [[UIImageView alloc]init];
         [self.view addSubview:view];
-        _jietu = view;
+        _screenshot = view;
     }
-    return _jietu;
+    return _screenshot;
 }
 
 - (UITableView *)tableView{
@@ -81,7 +80,7 @@
         cell.textLabel.text = @"BOSS直聘动画";
     }
     else if (indexPath.row == 1){
-        cell.textLabel.text = @"朋友圈图片动画";
+        cell.textLabel.text = @"图片动画";
     }
     cell.imageView.image = [UIImage imageNamed:@"appii"];
     
@@ -140,22 +139,24 @@
 
 #pragma mark - Push
 - (void)tranToBoss{
-    self.jietu.image = [self screenImageWithSize:self.view.bounds.size];
-    self.jietu.frame = self.view.bounds;
+    self.screenshot.image = [self screenImageWithSize:self.view.bounds.size];
+    self.screenshot.frame = self.view.bounds;
     self.tableView.hidden = YES;
     self.tabBarController.tabBar.hidden = YES;
     
     BossVC * vc = [[BossVC alloc]init];
+    
+    __weak __typeof(&*self)weakSelf = self;
     vc.block = ^(){
-        [self.jietu removeFromSuperview];
-        self.tableView.hidden = NO;
-        self.tabBarController.tabBar.hidden = NO;
+        [weakSelf.screenshot removeFromSuperview];
+        weakSelf.tableView.hidden = NO;
+        weakSelf.tabBarController.tabBar.hidden = NO;
     };
     
     [self presentViewController:vc animated:NO completion:nil];
     
     [UIView animateWithDuration:0.3 animations:^{
-        self.jietu.bounds = CGRectMake(50, 50, SCREEN.width - 100, SCREEN.height - 100);
+        self.screenshot.bounds = CGRectMake(50, 50, SCREEN.width - 100, SCREEN.height - 100);
     } completion:^(BOOL finished) {
         [vc changeBigView];
     }];
