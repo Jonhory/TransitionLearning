@@ -38,6 +38,7 @@
 }
 ```
 4.就这样，效果就出来啦
+
 ![](http://ww3.sinaimg.cn/large/c6a1cfeagw1f96m6g44y2g20b80kcqv6.gif)
 
 ##Boss直聘动画效果
@@ -73,6 +74,8 @@
 [weakSelf.screenshot removeFromSuperview];
 ```
 4.这样，BOSS直聘的动画效果就出现了。
+
+![](http://ww3.sinaimg.cn/large/c6a1cfeagw1f96nktfwdfg20bg0keh5f.gif)
 
 ###按以上思路，就可以实现一些简单常见的动画效果^0^
 
