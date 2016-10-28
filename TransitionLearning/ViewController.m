@@ -119,8 +119,8 @@
     if (self.lastIndexRow < indexPath.row) {
         NSLog(@"向下");
         CATransform3D transform = CATransform3DIdentity;
-        transform = CATransform3DRotate(transform, 0, 0, 0, 1);//渐变
-        transform = CATransform3DScale(transform, 1.2, 1.5, 0);//由小变大
+        transform = CATransform3DRotate(transform, 0, 0, 0, 1);//这里应该是角度
+        transform = CATransform3DScale(transform, 1.2, 1.5, 0);//这个状态是放大的状态，之后变回原样，应该是由大变小
         cell.layer.transform = transform;
         cell.layer.opacity = 0.0;
         
